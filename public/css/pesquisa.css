@@ -1,0 +1,74 @@
+#entrada {
+    background-size: cover;
+    border-bottom: 2px solid #134d80;
+    height: 490px;
+}
+.texto-pesquisa {
+    color: #fff;
+    padding-top: 100px;
+}
+
+.texto-pesquisa p {
+    color: #fff;
+}
+.card {
+    padding: 0px !important;
+}
+
+.card-body-news {
+    min-height: 170px;
+    max-height: 170px;
+}
+
+.search-category-pf li {
+    display: inline;
+    color: #00bcd0;
+    margin-right: 10px;
+}
+
+.input-pesquisa {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    margin-left: 40px;
+}
+
+.links-pesquisa {
+    color: #fff;
+    height:60px;
+    width: 100%;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    z-index: 999;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: transparent !important;
+}
+
+.toggle {
+    font-size: 34px;
+    color: #fff;
+}
+
+.link-nav {
+    color: #fff;
+}
+
+.opt-filtro {
+    padding:20px !important;
+}
+.link-destaque {
+    color: #d2d2d2;
+}
+
+.link-destaque:hover,
+.link-destaque:focus{
+    color: #fff;
+}

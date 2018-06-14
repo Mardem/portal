@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Patua+One|Acme');
+/*
+
+
+    Loader
+
+
+*/
+.content {
+    position: relative;
+    min-height: 100vh;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+
+
+*/
+body {
+    overflow-x: hidden;
+}
+
+.informes-rapido {
+    padding: 20px;
+    background: #fff;
+}
+
+.link-sem-traco {
+    text-decoration: none !important;
+}
+
+.link {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.link:before {
+    content: attr(data-attr);
+    width: 100%;
+    height: 2px;
+    background: #165fff;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    top: 95%;
+    left: 0;
+    transition: height 0.2s ease 0s, top 0.1s ease 0.2s;
+}
+
+.link:hover:before {
+    height: 100%;
+    top: 0;
+    transition: top 0.2s ease 0s, height 0.5s ease 0.3s;
+}
+
+.link > span {
+    display: block;
+    padding: 0 5px;
+    font-size: 20px;
+    color: #117cd5;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    .link {
+        margin-bottom: 20px;
+    }
+}
+
+.pf-nav {
+    background-color: #fdfdfd;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.entrada {
+    background: url("../img/bg2.svg") no-repeat center;
+    background-size: cover;
+}
+
+.container-pesquisa {
+    margin-top: -27px;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.pesquisa {
+    border-radius: 0;
+    background: white;
+    width: 100%;
+    display: block;
+    padding: 0.575rem .75rem;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.categoria-destaque {
+    margin: 50px 0;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.lista-rapida-itens li {
+    display: inline-block;
+}
+
+.lista-rapida-itens li img {
+    width: 100%;
+}
+
+.txt-destaque {
+    color: #175adc;
+}
+
+.texto-descricao-categorias {
+    font-size: 48px;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    margin: 30px 0;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.mais-texto-destaque {
+    font-size: 28px;
+}
+
+.cadastro-empresa {
+    background: #175adc;
+    padding: 10px;
+    border-bottom: 3px solid #0439a0;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    -ms-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+}
+
+.cadastro-empresa h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.cadastro-empresa p.lead {
+    color: #fff;
+}
+
+.cadastro-empresa:hover {
+    cursor: pointer;
+    background: #1a66f7;
+}
+
+.card-title-pf {
+    text-align: center;
+    text-align: -webkit-center;
+    color: #175adc;
+}
+
+.card-title-pf a:hover {
+    text-decoration: none;
+}
+
+.card-noticias {
+    margin-bottom: 10px;
+}
+
+.pesquisa-categoria {
+    border-top: 3px solid #525252;
+    padding-top: 35px;
+    margin: 0 0 40px 0 !important;
+    background-color: #045fa0 !important;
+}
+
+.pesquisa-categoria .container h5 {
+    color: #fff;
+}
+
+.pesquisa-categoria .container p {
+    color: #fff;
+}
+
+.pesquisa-categoria .container div .pesquisa-categoria-input {
+    border-radius: 0;
+    background: white;
+    width: 100%;
+    display: block;
+    padding: 0.575rem .75rem;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.pesquisa-categoria .container div .mais-pesquisados {
+    min-height: 30px;
+    background: #074f84;
+    text-align: left;
+    padding: 5px 0 0 10px;
+    width: 100%;
+    -webkit-border-radius: 0 2px;
+    -moz-border-radius: 0 2px;
+    border-radius: 0 2px;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.pesquisa-categoria .container div .mais-pesquisados a {
+    background-color: #00bcd0;
+    color: #fff;
+    padding: 0 10px 2px 10px;
+    text-transform: lowercase;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin: 0 5px 5px 0;
+}
+
+.pesquisa-categoria .container div .mais-pesquisados a:hover {
+    text-decoration: none;
+    background-color: #009eae;
+}
+
+.todas-noticias {
+    margin-top: 100px;
+}
+
+.titulo-noticia {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    font-size: 2rem;
+    color: #06567a;
+}
+
+.card-news {
+    margin-bottom: 15px;
+    border-color: #f7fafb !important;
+}
+
+.lista-categorias {
+    margin-top: 20px;
+}
+
+.lista-categorias li {
+    display: block;
+}
+
+.lista-categorias li a {
+    color: #fff;
+    -webkit-transition: all 0.35s ease-in;
+    -moz-transition: all 0.35s ease-in;
+    -ms-transition: all 0.35s ease-in;
+    -o-transition: all 0.35s ease-in;
+    transition: all 0.35s ease-in;
+}
+
+.info-cotacao {
+    font-weight: 700 !important;
+}
+
+button.owl-next {
+    width: 30px;
+}
+
+button.owl-prev {
+    width: 30px;
+}
+
+.mais-informacoes-economia:hover {
+    text-decoration: none;
+}
+
+.mg-b-15 {
+    margin-bottom: 15px;
+}
+
+.card-plus {
+    padding: 0 !important;
+}
+
+@media (min-width: 992px) {
+    .entrada {
+        min-height: 650px;
+    }
+
+    .pesquisa-categoria {
+        min-height: 300px;
+    }
+
+    .txt-entrada {
+        margin-top: 30px;
+    }
+
+    .pesquisa {
+        width: 70%;
+    }
+
+    .texto-descricao-categorias {
+        width: 80%;
+    }
+
+    .cadastro-empresa {
+        width: 70%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .txt-empresas {
+        display: none;
+    }
+
+    .cadastro-empresa {
+        width: 100%;
+    }
+
+    .pesquisa-categoria {
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+}
+
+.panel-turisticos {
+    margin-bottom: 15px;
+    -webkit-border-radius: 10px 10px 5px 5px;
+    -moz-border-radius: 10px 10px 5px 5px;
+    border-radius: 10px 10px 5px 5px;
+}
+
+.panel-turisticos header {
+    background: url("../img/svg/pontos-turisticos/pontos-turisticos-formosa.svg");
+    background-size: cover;
+    height: 209px;
+    padding: 16px 16px 14px;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    text-align: right;
+}
+
+.panel-turisticos .panel-header h2 {
+    font-family: 'Acme', cursive;
+
+
+    font-weight: 400;
+    color: #fff;
+    font-size: 28px;
+    text-shadow: 2px 1px 2px #5e95b1;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.panel-turisticos main.panel-body {
+
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.pontos-turisticos-list {
+    padding: 10px;
+}
+
+
+.content-data-icon {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 9px;
+    font-family:'Open Sans', cursive;
+}
+
+.content-data-icon:first-child {
+    margin-top:-10px;
+}
+
+.content-data-icon:last-child {
+    padding: 10px;
+}
+.icon-endereco:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: -20px;
+    margin-top:7px;
+    background-image: url('../img/svg/pontos-turisticos/icon-marker-point.svg');
+    background-size:contain;
+}
+
+.fim-pontos-turistico {
+    background: url("../img/svg/pontos-turisticos/fim-pontos.svg");
+    background-size: cover;
+    height: 14px;
+    margin-top: -32px;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+}

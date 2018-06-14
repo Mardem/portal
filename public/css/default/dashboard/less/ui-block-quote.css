@@ -1,0 +1,55 @@
+/*    Font Variable
+----------------------*/
+/*    Color Variable
+-----------------------*/
+/*    Solid Color
+------------------*/
+/*    Brand color
+----------------------*/
+.blockquote-box {
+  border-right: 5px solid #E6E6E6;
+  margin-bottom: 25px;
+}
+.blockquote-box .square {
+  width: 100px;
+  min-height: 50px;
+  margin-right: 22px;
+  text-align: center!important;
+  background-color: #E6E6E6;
+  padding: 20px 0;
+}
+.blockquote-box .blockquote-primary {
+  border-color: #4680ff;
+}
+.blockquote-box .blockquote-primary .square {
+  background-color: #4680ff;
+  color: #fff;
+}
+.blockquote-box .blockquote-success {
+  border-color: #26DAD2;
+}
+.blockquote-box .blockquote-success .square {
+  background-color: #26DAD2;
+  color: #fff;
+}
+.blockquote-box .blockquote-info {
+  border-color: #62d1f3;
+}
+.blockquote-box .blockquote-info .square {
+  background-color: #62d1f3;
+  color: #fff;
+}
+.blockquote-box .blockquote-warning {
+  border-color: #ffb64d;
+}
+.blockquote-box .blockquote-warning .square {
+  background-color: #ffb64d;
+  color: #fff;
+}
+.blockquote-box .blockquote-danger {
+  border-color: #D43F3A;
+}
+.blockquote-box .blockquote-danger .square {
+  background-color: #fc6180;
+  color: #fff;
+}

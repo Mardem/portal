@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal');
+
+.card-img-top {
+    max-height: 175px;
+}
+.search-category-pf li {
+    display: inline;
+    color: #00bcd0;
+    margin-right: 10px;
+}
+.card {
+    padding: 0px !important;
+}
+
+.card-body-news {
+    min-height: 170px;
+    max-height: 170px;
+}
+
+.input-busca {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+}

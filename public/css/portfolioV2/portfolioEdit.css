@@ -1,0 +1,14 @@
+.lead-descricao:hover,
+.lead-descricao-ofertas:hover,
+.sobre-text:hover{
+    cursor: pointer;
+}
+
+.form-modal-descPrin {
+    padding-top: 10px;
+}
+
+.card-header {
+    background-color: #fff !important;
+    border: none !important;
+}
